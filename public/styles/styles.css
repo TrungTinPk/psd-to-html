@@ -13,7 +13,8 @@ img {
 body {
   font-family: "Montserrat", sans-serif;
   line-height: 1;
-  color: #333333; }
+  color: #333333;
+  font-size: 1.4rem; }
 
 .wrapper {
   max-width: 1920px;
