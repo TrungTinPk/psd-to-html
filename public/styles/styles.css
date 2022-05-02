@@ -23,3 +23,8 @@ body {
   max-width: 1230px;
   margin: 0 auto;
   padding: 0 15px; }
+
+.header {
+  min-height: 100rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(233, 131, 130, 0.8)), to(rgba(238, 216, 137, 0.8))), url("../images/img-header-bg.jpg") no-repeat center/cover;
+  background: linear-gradient(to bottom, rgba(233, 131, 130, 0.8), rgba(238, 216, 137, 0.8)), url("../images/img-header-bg.jpg") no-repeat center/cover; }
