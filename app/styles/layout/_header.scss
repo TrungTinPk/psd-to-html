@@ -5,5 +5,119 @@
       rgba($primary-color, 0.8),
       rgba($secondary-color, 0.8)
     )
-    ,url("../images/img-header-bg.jpg") no-repeat center / cover;
+    ,url('../images/img-header-bg.jpg') no-repeat center / cover;
+    color: #ffffff;
+  &-logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  &-menu-link {
+    color: #ffffff;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-bottom: 1rem;
+    border-bottom: 4px solid transparent;
+    transition: all 0.25s linear;
+  }
+
+  &-menu-link:hover {
+    color: $secondary-color;
+    border-bottom-color: $secondary-color;
+  }
+  &-menu-icon{
+    color: #ffffff;
+  }
+  &-top {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  &-menu {
+    display: flex;
+  }
+  &-menu-item:not(:first-child) {
+    margin-left: 5rem;
+  }
+  &-content {
+    padding-top: 17rem;
+    max-width: 80rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &-content-caption {
+    font-size: 7.2rem;
+    font-family: $third-font;
+    margin-bottom: 3rem;
+  }
+  &-content-main {
+    font-size: 15rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom:0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 6rem;
+      height: 0.5rem;
+      background-color: #ffffff;
+    }
+  }
+  &-content-more {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    border: 4px solid #ffffff;
+    display: inline-block;
+    flex-wrap: wrap;
+  }
+  &-bottom {
+    margin-top: 15.5rem;
+    padding-bottom: 2.5rem;
+    display: flex;
+    &-item {
+      padding-top: 2.5rem;
+      border-top: 5px solid #ffffff;
+      width: calc(25% - 3rem);
+      margin-left: 3rem;
+      opacity: 0.6;
+      position: relative;
+      cursor: pointer;
+    }
+    &-item:before {
+      content: "";
+      height: 0.5rem;
+      width: 7rem;
+      background-color: $primary-color;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(-100%);
+      opacity: 0;
+      transition: all 0.25 linear;
+    }
+    &-item:hover,
+    &-item.is-active {
+      opacity: 1;
+      &:before {
+        opacity: 1;
+      }
+    }
+    &-number {
+      font-weight: bold;
+      font-size: 2.4rem;
+      margin-right: 10px;
+    }
+    &-text {
+      text-transform: uppercase;
+      font-size: 1.8rem;
+    }
+  }
 }
