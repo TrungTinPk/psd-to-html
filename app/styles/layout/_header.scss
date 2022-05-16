@@ -200,6 +200,14 @@
     &-menu-item {
       margin-bottom: 1rem;
     }
+    &-menu-icon {
+      display: block;
+      color: $title-color;
+      padding: 1.5rem;
+      &:hover {
+        color: $primary-color;
+      }
+    }
     &-menu-link {
       color: $title-color;
       width: 100%;
