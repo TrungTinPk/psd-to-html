@@ -82,9 +82,14 @@ body {
       content: "";
       position: absolute;
       bottom: 0;
+      position: absolute;
       left: 50%;
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%);
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
       width: 6rem;
       height: 0.5rem;
       background-color: #ffffff; }
@@ -137,7 +142,7 @@ body {
       font-size: 1.8rem; }
   @media screen and (min-width: 768px) {
     .header-menu-item:not(:first-child) {
-      margin-left: 5px; }
+      margin-left: 5rem; }
     .header-menu-link {
       color: #ffffff;
       display: inline-block;
@@ -203,6 +208,12 @@ body {
         transform: translateX(0); }
     .header-menu-item {
       margin-bottom: 1rem; }
+    .header-menu-icon {
+      display: block;
+      color: #333333;
+      padding: 1.5rem; }
+      .header-menu-icon:hover {
+        color: #e98382; }
     .header-menu-link {
       color: #333333;
       width: 100%;

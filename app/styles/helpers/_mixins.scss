@@ -1,0 +1,32 @@
+@mixin size($width: 100px, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+// absoluteCenter
+@mixin absoluteCenter($direction: "left") {
+  position: absolute;
+  @if($direction) == "left" {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @if($direction) == "left" {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @if($direction) == "top" {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @if($direction) == "both" {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+  transform: translate(-50%, -50%);
+}

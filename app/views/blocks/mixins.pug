@@ -1,0 +1,8 @@
+mixin menuLink(title, href="#")
+    li.header-menu-item
+        a.header-menu-link(href= href)=title
+
+mixin headerBottomItem(number, title)
+    li.header-bottom-item
+        span.header-bottom-number= number
+        span.header-bottom-text= title

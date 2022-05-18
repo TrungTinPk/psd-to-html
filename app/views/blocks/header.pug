@@ -4,16 +4,11 @@ header.header
             a.header-logo(href="index.html") MoGo
             i.fa.fa-bars.header-toggle
             ul.header-menu
-                li.header-menu-item
-                    a.header-menu-link(href="#") About
-                li.header-menu-item
-                    a.header-menu-link(href="#") Service
-                li.header-menu-item
-                    a.header-menu-link(href="#") Work
-                li.header-menu-item
-                    a.header-menu-link(href="#") Blog
-                li.header-menu-item
-                    a.header-menu-link(href="#") Contact
+                +menuLink("About")
+                +menuLink("Service")
+                +menuLink("Work")
+                +menuLink("Blog")
+                +menuLink("Contact")
                 li.header-menu-item
                     a.header-menu-icon(href="#")
                         i.fa.fa-shopping-cart
@@ -25,15 +20,7 @@ header.header
             h1.header-content-main Welcome To Mogo
             a.header-content-more(href="") Learn more
         .header-bottom
-            .header-bottom-item.is-active
-                span.header-bottom-number 01
-                span.header-bottom-text Intro
-            .header-bottom-item
-                span.header-bottom-number 02
-                span.header-bottom-text Work
-            .header-bottom-item
-                span.header-bottom-number 03
-                span.header-bottom-text About
-            .header-bottom-item
-                span.header-bottom-number 04
-                span.header-bottom-text Contact
+            +headerBottomItem("01", "Intro")
+            +headerBottomItem("02", "Work")
+            +headerBottomItem("03", "About")
+            +headerBottomItem("04", "Contact")
