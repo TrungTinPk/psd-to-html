@@ -30,3 +30,7 @@
 
   transform: translate(-50%, -50%);
 }
+
+@mixin bg($color: red) {
+  background-color: $color;
+}

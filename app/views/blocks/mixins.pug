@@ -6,3 +6,10 @@ mixin headerBottomItem(number, title)
     li.header-bottom-item
         span.header-bottom-number= number
         span.header-bottom-text= title
+
+mixin blockHeader(caption,  title,  desc)
+    .block-header
+        h3.block-header-caption= caption
+        h2.block-hedear-heading=  title
+        if desc
+            p.block-header-desc= desc
