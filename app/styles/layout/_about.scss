@@ -2,4 +2,56 @@
   padding-top: 9.3rem;
   padding-bottom: 11rem;
   color: #ffffff;
+  //&-list {
+  //  display: flex;
+  //  flex-wrap: wrap;
+  //  margin-left: -3rem;
+  //}
+  //&-item {
+  //  margin-left: 3rem;
+  //  width: calc(33.33% - 3rem);
+  //}
+  //CSS GRID
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+  }
+  &-item{
+    position: relative;
+
+    &:after {
+      content: "";
+      @include absoluteFull();
+      @include bg($third-color);
+      z-index: -1;
+      transform: translate(1rem, 1rem);
+    }
+  }
+  &-content {
+    @include absoluteFull();
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s linear;
+    background: linear-gradient(
+      to bottom,
+      rgba($primary-color, 0.8),
+      rgba($secondary-color, 0.8)
+    );
+    z-index: 2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-transform: uppercase;
+  }
+  &-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  &-title {
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
 }
