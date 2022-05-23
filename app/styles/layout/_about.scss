@@ -19,12 +19,22 @@
   }
   &-item{
     position: relative;
-
+    z-index: 1;
+    transition: transform 0.25s linear;
     &:after {
       content: "";
       @include absoluteFull();
       @include bg($third-color);
       z-index: -1;
+    }
+  }
+  &-item:hover {
+    transform: translate(-1rem, -1rem);
+    .about-content {
+      opacity: 1;
+      visibility: visible;
+    }
+    &:after {
       transform: translate(1rem, 1rem);
     }
   }
